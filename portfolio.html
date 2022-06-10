@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container header_container">
+            <a class="studio_naming" href=""> <span class="naming_first_part">Web</span>Studio</a>
+            <!-- navigation -->
+            <nav class="navigation">
+                <ul class="links">
+                    <li class="item"><a class="link" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="link link_uncommon" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <!-- contacts -->
+            <ul class="contact_links">
+                <li class="item"><a class="link" href="mailto:info@devstudio.com">
+                        <svg class="header_contact_link" width="16" height="12">
+                            <use href="./pictures/sprite/sprite.svg#icon-header-mail-icon"> </use>
+                        </svg> info@devstudio.com</a>
+                </li>
+                <li class="item"><a class="link" href="tel:+380961111111">
+                        <svg class="header_contact_link" width="10" height="16">
+                            <use href="./pictures/sprite/sprite.svg#icon-header-phone-icon"> </use>
+                        </svg> +38 096 111 11 11</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- projects sort buttons -->
+    <main>
+        <!-- sort buttons -->
+        <section class="portfolio">
+            <div class="container">
+            <h2 hidden>Сортувальні кнопки</h2>
+            <ul class="sort_buttons">
+                <li><button class="sort_button">Все</button></li>
+                <li><button class="sort_button">Веб-сайты</button></li>
+                <li><button class="sort_button">Приложения</button></li>
+                <li><button class="sort_button">Дизайн</button></li>
+                <li><button class="sort_button">Маркетинг</button></li>
+            </ul>
+        <!-- projects -->
+        <ul class="studio_projects">
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/laptop.jpg" alt="ноутбук із скріншотом сайту"> 
+                <div class="project_data">
+                <h3 class="project_naming">Технокряк</h3>
+                <p class="project_direction">Веб-сайт</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице. </p> </div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/basketball.jpg" alt="два гравця грають у баскетбол">
+                <div class="project_data">
+                <h3 class="project_naming">Постер New Orlean vs Golden Star</h3>
+                <p class="project_direction">дизайн</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+           </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/restorant_logo.jpg" alt="логотип ресторану seafood">
+                <div class="project_data">
+                <h3 class="project_naming">Ресторан Seafood</h3>
+                <p class="project_direction">Приложение</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/headphones.jpg" alt="фото навушників">
+                <div class="project_data">
+                <h3 class="project_naming">Проект Prime</h3>
+                <p class="project_direction">Маркетинг</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/boxes.jpg" alt="фото двох коробок">
+                <div class="project_data">
+                <h3 class="project_naming">Проект Boxes</h3>
+                <p class="project_direction">Приложение</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/imac.jpg" alt="фото компютера">
+                <div class="project_data">
+                <h3 class="project_naming">Inspiration is no Borders</h3>
+                <p class="project_direction">Веб-сайт</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/book.jpg" alt="книга">
+                <div class="project_data">
+                <h3 class="project_naming">Издание Limited Edition</h3>
+                <p class="project_direction">Дизайн</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/birka.jpg" alt="ярлик">
+                <div class="project_data">
+                <h3 class="project_naming">Проект lAB</h3>
+                <p class="project_direction">Маркетинг</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+            <li class="studio_project">
+                <a href="">
+                <img class="project_photo" src="./pictures/printing.jpg" alt="руки на клавіатурі">
+                <div class="project_data">
+                <h3 class="project_naming">Growing Business</h3>
+                <p class="project_direction">Приложение</p>
+                </div>
+                <div class="annotation"> <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
+                    Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                </a>
+            </li>
+        </ul>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_contacts_block">
+                <a class="studio_naming" href=""> <span class="naming_first_part">Web</span> <span
+                        class="naming_second_part">Studio</span></a>
+                <address>
+                    <ul class="footer_contacts">
+                        <li><a target="blank" class="studio_location" href="https://goo.gl/maps/rv8X6NTWvVzBSWie9">г. Киев,
+                                пр-т Леси Украинки, 26</a></li>
+                        <li><a class="studio_mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="studio_phone_number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer_links">
+                <h3>присоединяйтесь</h3>
+                <div class="studio_link_icons">
+                    <a class="studio_link" href=""><svg class="studio_link_icon" width="20" height="20">
+                            <use href="./pictures/sprite/sprite.svg#icon-instagram-icon"></use>
+                        </svg></a>
+                    <a class="studio_link" href=""><svg class="studio_link_icon" width="20" height="20">
+                            <use href="./pictures/sprite/sprite.svg#icon-twitter-icon"></use>
+                        </svg></a>
+                    <a class="studio_link" href=""><svg class="studio_link_icon" width="20" height="20">
+                            <use href="./pictures/sprite/sprite.svg#icon-facebook-icon"></use>
+                        </svg></a>
+                    <a class="studio_link" href=""><svg class="studio_link_icon" width="20" height="20">
+                            <use href="./pictures/sprite/sprite.svg#icon-linkedin-icon"></use>
+                        </svg></a>
+                </div>
+            </div>
+            <form class="footer_form">
+                <p>Подпишитесь на рассылку</p>
+                <label class="subs">
+                    <input type="mail" placeholder="E-mail" class="mail_input">
+                    <button type="submit" class="subs_btn">
+                        <p>Подписаться</p>
+                        <svg with="24px" height="24px" class="send_icon">
+                            <use href="./pictures/sprite/sprite.svg#icon-icon-send">
+                            </use>
+                        </svg>
+                    </button>
+                </label>
+            </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
