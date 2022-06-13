@@ -1,0 +1,46 @@
+// Colors
+
+$ActionColor:#2196F3;
+$AccentColor:#2196F3;
+$MainColor:#212121;
+$SecondColor:#2F303A;
+$BackColor:#ffffff;
+$SubtextualColor:#757575;
+
+// Shadows
+
+$TeamSectionShadows:0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+
+// Fonts
+
+$MainFont: 'Roboto','sans serif';
+$SecondFont: 'Raleway';
+
+// Animations
+
+$MainTransition:250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// Other
+
+%list{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+%link{
+    text-decoration: none;
+}
+
+%FlexCenter{
+    display: flex;
+    align-items: center;
+}
+
+%AllCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

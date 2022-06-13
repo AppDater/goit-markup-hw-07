@@ -1,0 +1,52 @@
+.hero{
+    background-color: $SubtextualColor;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../pictures/backgrounds/main-top-bsckground.png');
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &-title{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $BackColor;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    & .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-btn {
+        background-color: $ActionColor;
+        color: $BackColor;
+        font-weight: 700;
+        line-height: 1.86;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        font-family: inherit;
+        border-color: $AccentColor;
+        border-radius: 4px;
+        padding: 10px 32px;
+    }
+
+    &-backdrop.is-hidden {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        pointer-events: all;
+        visibility: visible;
+        transition: opacity 1000ms, visibility 1000ms;
+    }
+}

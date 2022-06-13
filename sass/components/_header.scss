@@ -1,0 +1,101 @@
+.header{
+    background-color: $BackColor;
+    border-bottom: solid #ECECEC 1px;
+
+    &-container {
+            @extend %FlexCenter;
+            margin-left: auto;
+            margin-right: auto;
+        }
+}
+
+.navigation{
+    padding: 0;
+    margin-right: auto;
+}
+
+
+.navigation-links{
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__link {
+        @extend %FlexCenter;
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 0.8;
+        letter-spacing: 0.02em;
+        color: inherit;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: color, $MainTransition;
+    }
+
+    &__link::after {
+        position: absolute;
+        content: '';
+        background-color: $ActionColor;
+        bottom: -3px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        z-index: -1;
+    }
+    
+    &__link:hover,
+    &__link:focus{
+        color: $ActionColor;
+        z-index: 1;
+    }
+    
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
+    
+    &__link.link_uncommon {
+        color: $ActionColor;
+        z-index: 1;
+    }
+}
+
+.link_uncommon {
+    color: $ActionColor;
+}
+
+.contact-links{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
+
+    &__link {
+        @extend %FlexCenter;
+        position: relative;
+        color: $SubtextualColor;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 0.8;
+        letter-spacing: 0.02em;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        transition: color, $MainTransition;
+    }
+
+    &__link:focus, &__link:hover{
+        color: $ActionColor;
+        z-index: 1;
+    }
+
+    &__icon{
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}

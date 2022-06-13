@@ -1,0 +1,42 @@
+.container {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+* {
+
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+button{
+    margin: 0;
+}
